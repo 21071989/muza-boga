@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наташа Секрет — Ментор состояния · Муза Бога</title>
+<meta name="description" content="Наташа Секрет — поэтесса, ментор состояния, создатель методологии Муза Бога. 12 практик уверенности из личного опыта. Закрытое пространство Prime WOMAN, диагностика, групповая программа Поток Музы.">
+<meta name="keywords" content="ментор состояния муза бога, наташа секрет, уверенность в себе для женщин, трансформация женщины, персонажи женщины, выйти из роли всё сама, женский ментор онлайн, поэтесса психолог">
+<meta property="og:title" content="Наташа Секрет — Муза Бога">
+<meta property="og:description" content="Ментор состояния. Поэтесса. «Уверенность не дают — её берут.»">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://muza-boga.ru">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bord:#6B1A1A;
+  --bord2:#7D2020;
+  --bord-light:#8B2525;
+  --ink:#0C0C0C;
+  --ink2:#181818;
+  --off:#F8F6F2;
+  --off2:#F0EDE7;
+  --off3:#E8E4DC;
+  --line:#D8D4CC;
+  --muted:#888078;
+  --muted2:#B0A898;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--off);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.1}
+.wrap{max-width:1100px;margin:0 auto;padding:0 48px}
+@media(max-width:680px){.wrap{padding:0 22px}}
+
+/* BUTTONS */
+.btn{display:inline-block;cursor:pointer;font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:all .22s;text-align:center}
+.btn-bord{background:var(--bord);color:#fff;padding:15px 38px}
+.btn-bord:hover{background:var(--bord2);transform:translateY(-1px)}
+.btn-ink{background:var(--ink);color:#fff;padding:15px 38px}
+.btn-ink:hover{background:#333}
+.btn-out{border:1.5px solid var(--ink);color:var(--ink);padding:14px 38px}
+.btn-out:hover{background:var(--ink);color:var(--off)}
+.btn-out-w{border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.7);padding:14px 38px}
+.btn-out-w:hover{border-color:#fff;color:#fff}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;background:rgba(248,246,242,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+nav.sc{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.n-logo{font-family:var(--serif);font-size:19px;letter-spacing:.04em}
+.n-logo b{color:var(--bord);font-weight:400}
+.n-mid{display:flex;gap:32px}
+.n-mid a{font-size:13px;color:var(--muted);letter-spacing:.06em;transition:color .2s}
+.n-mid a:hover{color:var(--ink)}
+@media(max-width:760px){.n-mid{display:none}nav{padding:0 22px}}
+
+/* ─────────── HERO ─────────── */
+.hero{min-height:100vh;display:grid;grid-template-columns:52% 48%;padding-top:64px;background:var(--off)}
+.hero-l{display:flex;flex-direction:column;justify-content:center;padding:80px 64px 80px 0}
+.hero-tag{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.hero-tag-line{width:28px;height:1px;background:var(--bord)}
+.hero-tag-txt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bord);font-weight:500}
+.hero-h1{font-size:clamp(46px,5.8vw,76px);margin-bottom:6px}
+.hero-h1-2{font-size:clamp(46px,5.8vw,76px);font-style:italic;color:var(--bord);margin-bottom:28px}
+.hero-lead{font-size:17px;color:var(--muted);line-height:1.85;max-width:460px;margin-bottom:44px}
+.hero-lead strong{color:var(--ink);font-weight:400}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px}
+.hero-proof{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.hero-proof-dot{width:7px;height:7px;background:var(--bord);flex-shrink:0}
+.hero-r{height:100vh;position:relative;overflow:hidden;background:var(--ink2)}
+.hero-r::before{content:'';position:absolute;inset:0;background:linear-gradient(280deg,transparent 55%,var(--off) 100%);z-index:2}
+.hero-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#444;font-family:var(--serif);font-size:15px;text-align:center;padding:40px;font-style:italic}
+@media(max-width:880px){.hero{grid-template-columns:1fr}.hero-l{padding:100px 0 64px}.hero-r{display:none}}
+
+/* ─────────── QUOTE STRIP ─────────── */
+.qstrip{background:var(--bord);padding:52px 0;text-align:center}
+.qstrip-txt{font-family:var(--serif);font-size:clamp(22px,3vw,36px);color:#fff;line-height:1.3;font-style:italic;max-width:700px;margin:0 auto 10px;padding:0 24px}
+.qstrip-sub{font-size:13px;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase}
+
+/* ─────────── PAIN ─────────── */
+.pain{background:var(--ink);padding:80px 0}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.06)}
+.pain-item{background:var(--ink);padding:48px 40px;transition:background .3s}
+.pain-item:hover{background:#1a1a1a}
+.pain-icon{font-size:20px;margin-bottom:18px}
+.pain-t{font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:12px;line-height:1.3}
+.pain-d{font-size:14px;color:rgba(255,255,255,.38);line-height:1.85}
+@media(max-width:640px){.pain-grid{grid-template-columns:1fr}}
+
+/* ─────────── ABOUT ─────────── */
+.about{padding:110px 0;background:var(--off)}
+.about-grid{display:grid;grid-template-columns:420px 1fr;gap:80px;align-items:center}
+.about-img{aspect-ratio:3/4;background:var(--ink2);position:relative;overflow:hidden}
+.about-img-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#333;font-family:var(--serif);font-size:15px;font-style:italic;text-align:center;padding:40px}
+.about-sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bord);margin-bottom:18px;font-weight:500}
+.about-quote{font-family:var(--serif);font-size:28px;font-style:italic;line-height:1.4;color:var(--ink);margin-bottom:28px;padding-left:22px;border-left:2px solid var(--bord)}
+.about-p{font-size:15px;color:var(--muted);line-height:1.9;margin-bottom:14px}
+.about-p strong{color:var(--ink);font-weight:400}
+.about-roles{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:36px;border:1px solid var(--line)}
+.about-role{padding:18px 22px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.about-role:nth-child(2n){border-right:none}
+.about-role:nth-last-child(-n+2){border-bottom:none}
+.about-role-t{font-family:var(--serif);font-size:16px;color:var(--ink);margin-bottom:3px}
+.about-role-d{font-size:12px;color:var(--muted);letter-spacing:.02em}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}.about-img{aspect-ratio:1/1;max-width:340px}}
+
+/* ─────────── PERSONAS ─────────── */
+.personas{padding:110px 0;background:var(--off2)}
+.personas-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:64px}
+.personas-head h2{font-size:clamp(36px,4.5vw,60px)}
+.personas-head p{font-size:16px;color:var(--muted);line-height:1.8}
+.personas-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line)}
+.persona{background:var(--off2);padding:40px 28px;position:relative;transition:background .3s;overflow:hidden}
+.persona::before{content:'';position:absolute;top:0;left:0;right:0;height:0;background:var(--bord);transition:height .3s}
+.persona:hover{background:var(--off)}
+.persona:hover::before{height:3px}
+.persona.is-muza{background:var(--bord)}
+.persona.is-muza::before{display:none}
+.persona-num{font-size:11px;letter-spacing:.15em;color:var(--muted2);margin-bottom:16px;font-weight:500}
+.is-muza .persona-num{color:rgba(255,255,255,.4)}
+.persona-name{font-family:var(--serif);font-size:22px;margin-bottom:10px;line-height:1.2}
+.is-muza .persona-name{color:#fff}
+.persona-phrase{font-size:12px;font-style:italic;color:var(--bord);margin-bottom:14px;font-family:var(--serif)}
+.is-muza .persona-phrase{color:rgba(255,255,255,.6)}
+.persona-desc{font-size:13px;color:var(--muted);line-height:1.8}
+.is-muza .persona-desc{color:rgba(255,255,255,.55)}
+.persona-insight{font-size:12px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted2);line-height:1.7;font-style:italic}
+.is-muza .persona-insight{border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.4)}
+.personas-cta{margin-top:48px;text-align:center}
+.personas-cta p{font-size:15px;color:var(--muted);margin-bottom:20px}
+@media(max-width:900px){.personas-grid{grid-template-columns:1fr 1fr}.persona.is-muza{grid-column:span 2}}
+@media(max-width:540px){.personas-grid{grid-template-columns:1fr}.persona.is-muza{grid-column:span 1}.personas-head{grid-template-columns:1fr}}
+
+/* ─────────── RESULTS ─────────── */
+.results{padding:110px 0;background:var(--off)}
+.results-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;gap:24px;flex-wrap:wrap}
+.results-head h2{font-size:clamp(34px,4vw,54px)}
+.results-note{font-size:14px;color:var(--muted);max-width:280px;line-height:1.6;text-align:right}
+.results-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.rcard{background:var(--off2);border:1px solid var(--line);padding:36px;transition:border-color .3s}
+.rcard:hover{border-color:var(--bord)}
+.rtag{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:var(--bord);color:#fff;padding:4px 12px;margin-bottom:18px}
+.rtext{font-size:15px;line-height:1.85;color:var(--ink);margin-bottom:20px;font-family:var(--serif);font-style:italic}
+.rwho strong{color:var(--bord);font-weight:400;font-size:14px}
+.rwho span{font-size:12px;color:var(--muted)}
+@media(max-width:640px){.results-grid{grid-template-columns:1fr}}
+
+/* ─────────── PRACTICES ─────────── */
+.practices{background:var(--ink);padding:110px 0}
+.prac-head{text-align:center;margin-bottom:72px}
+.prac-head h2{font-size:clamp(36px,4.5vw,60px);color:#fff;margin-bottom:14px}
+.prac-head p{font-size:16px;color:rgba(255,255,255,.38);max-width:480px;margin:0 auto}
+.prac-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06)}
+.prac-item{background:var(--ink);padding:36px 28px;transition:background .3s;position:relative}
+.prac-item:hover{background:#1a1a1a}
+.prac-n{font-family:var(--serif);font-size:48px;color:rgba(107,26,26,.4);line-height:1;margin-bottom:14px}
+.prac-t{font-family:var(--serif);font-size:18px;color:#fff;margin-bottom:8px;line-height:1.3}
+.prac-d{font-size:13px;color:rgba(255,255,255,.36);line-height:1.8}
+@media(max-width:860px){.prac-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.prac-grid{grid-template-columns:1fr}}
+
+/* ─────────── PRODUCTS ─────────── */
+.products{padding:110px 0;background:var(--off2)}
+.prod-head{margin-bottom:60px}
+.prod-head h2{font-size:clamp(34px,4.5vw,56px);margin-bottom:14px}
+.prod-head p{font-size:16px;color:var(--muted)}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;background:var(--line);border:1px solid var(--line)}
+.prod{background:var(--off2);padding:52px 40px;display:flex;flex-direction:column;position:relative;border-right:1px solid var(--line)}
+.prod:last-child{border-right:none}
+.prod.main{background:var(--ink)}
+.prod-accent{position:absolute;top:0;left:0;right:0;height:4px;background:var(--bord)}
+.prod-ico{font-size:28px;margin-bottom:22px}
+.prod-name{font-family:var(--serif);font-size:28px;margin-bottom:8px;line-height:1.15}
+.main .prod-name{color:#fff}
+.prod-price{font-size:13px;color:var(--bord);letter-spacing:.06em;margin-bottom:20px;font-weight:400}
+.main .prod-price{color:#C97A7A}
+.prod-desc{font-size:14px;line-height:1.8;margin-bottom:28px;flex:1;color:var(--muted)}
+.main .prod-desc{color:rgba(255,255,255,.45)}
+.prod-list{list-style:none;margin-bottom:32px}
+.prod-list li{font-size:13px;padding:9px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
+.main .prod-list li{border-color:rgba(255,255,255,.07);color:rgba(255,255,255,.45)}
+.prod-list li::before{content:'—';color:var(--bord);flex-shrink:0}
+.prod-cta{display:block;text-align:center;font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:14px;border:1.5px solid var(--bord);color:var(--bord);transition:all .2s;cursor:pointer}
+.prod-cta:hover{background:var(--bord);color:#fff}
+.main .prod-cta{background:var(--bord);color:#fff;border-color:var(--bord)}
+.main .prod-cta:hover{background:var(--bord2)}
+.prod-sp{margin-top:12px;font-size:11px;color:var(--muted2);text-align:center;font-style:italic}
+.main .prod-sp{color:rgba(255,255,255,.25)}
+@media(max-width:860px){.prod-grid{grid-template-columns:1fr;border:none;background:none;gap:16px}.prod{border:1px solid var(--line);border-right:1px solid var(--line)}}
+
+/* ─────────── FAQ ─────────── */
+.faq{padding:110px 0;background:var(--off)}
+.faq-layout{display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:start}
+.faq-h{font-size:clamp(32px,4vw,50px);margin-bottom:48px}
+.faq-h em{font-style:italic;color:var(--bord)}
+.fi{border-bottom:1px solid var(--line)}
+.fq{width:100%;background:none;border:none;cursor:pointer;padding:22px 0;text-align:left;font-family:var(--sans);font-size:15px;color:var(--ink);font-weight:400;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s}
+.fq:hover{color:var(--bord)}
+.fq-ico{font-size:18px;color:var(--bord);flex-shrink:0;transition:transform .3s;font-family:var(--serif)}
+.fi.open .fq-ico{transform:rotate(45deg)}
+.fa{font-size:14px;color:var(--muted);line-height:1.85;max-height:0;overflow:hidden;transition:max-height .35s,padding .3s}
+.fi.open .fa{max-height:220px;padding-bottom:22px}
+.fcard{background:var(--bord);padding:44px;position:sticky;top:84px}
+.fcard-t{font-family:var(--serif);font-size:26px;color:#fff;line-height:1.35;margin-bottom:18px;font-style:italic}
+.fcard-d{font-size:14px;color:rgba(255,255,255,.5);line-height:1.8;margin-bottom:28px}
+.fcard-cta{display:block;text-align:center;background:#fff;color:var(--bord);padding:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-family:var(--sans);font-weight:500;transition:all .2s;cursor:pointer}
+.fcard-cta:hover{background:var(--off2)}
+.fcard-n{margin-top:12px;font-size:11px;color:rgba(255,255,255,.3);text-align:center;font-style:italic}
+.fcard-n strong{color:rgba(255,255,255,.6)}
+@media(max-width:820px){.faq-layout{grid-template-columns:1fr}}
+
+/* ─────────── FINAL ─────────── */
+.fin{background:var(--ink);padding:120px 48px;text-align:center;position:relative;overflow:hidden}
+.fin::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 60%,rgba(107,26,26,.25) 0%,transparent 65%);pointer-events:none}
+.fin-tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(107,26,26,.8);margin-bottom:24px;font-weight:500;position:relative}
+.fin-h{font-family:var(--serif);font-size:clamp(36px,5.5vw,70px);color:#fff;line-height:1.12;max-width:720px;margin:0 auto 14px;position:relative}
+.fin-h em{font-style:italic;color:#C97A7A}
+.fin-quote{font-family:var(--serif);font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.32);font-style:italic;margin:0 auto 48px;max-width:480px;position:relative}
+.fin-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+
+/* ─────────── FOOTER ─────────── */
+footer{background:var(--off2);border-top:1px solid var(--line);padding:60px 0 36px}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.fb-logo{font-family:var(--serif);font-size:20px;margin-bottom:10px}
+.fb-logo b{color:var(--bord);font-weight:400}
+.fb-tag{font-size:13px;color:var(--muted);line-height:1.7;max-width:230px;margin-bottom:22px}
+.fb-soc{display:flex;gap:8px}
+.fb-s{width:36px;height:36px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--muted);transition:all .2s}
+.fb-s:hover{border-color:var(--bord);color:var(--bord)}
+.fc-lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--bord);margin-bottom:14px;font-weight:500}
+.fc-links{display:flex;flex-direction:column;gap:9px}
+.fc-links a{font-size:13px;color:var(--muted);transition:color .2s}
+.fc-links a:hover{color:var(--ink)}
+.fbot{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fcopy{font-size:12px;color:var(--muted2)}
+.flegal{display:flex;gap:20px}
+.flegal a{font-size:12px;color:var(--muted2);transition:color .2s}
+.flegal a:hover{color:var(--muted)}
+@media(max-width:820px){.fg{grid-template-columns:1fr 1fr;gap:28px}}
+@media(max-width:480px){.fg{grid-template-columns:1fr}.fbot{flex-direction:column;align-items:flex-start}}
+
+/* ANIM */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+.rv.on{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="n-logo">Наташа Секрет <b>✦</b></div>
+  <div class="n-mid">
+    <a href="#about">Обо мне</a>
+    <a href="#personas">Персонажи</a>
+    <a href="#products">Форматы</a>
+    <a href="#faq">Вопросы</a>
+  </div>
+  <a href="https://t.me/nata_secrettt" class="btn btn-bord" style="font-size:11px;padding:10px 22px">Написать</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-l wrap" style="max-width:none;padding-left:max(48px,calc((100vw - 1100px)/2 + 48px))">
+    <div class="hero-tag">
+      <div class="hero-tag-line"></div>
+      <span class="hero-tag-txt">Ментор состояния · Муза Бога</span>
+    </div>
+    <h1 class="hero-h1">Ты устала</h1>
+    <div class="hero-h1-2">быть удобной?</div>
+    <p class="hero-lead">
+      Я помогаю женщинам увидеть <strong>кто управляет их жизнью</strong> — и наконец выбрать себя. Не через терапию. Через <strong>состояние, тело и поэзию</strong>.
+    </p>
+    <div class="hero-btns">
+      <a href="#products" class="btn btn-bord">✦ Войти в пространство</a>
+      <a href="#personas" class="btn btn-out">Узнать своего персонажа</a>
+    </div>
+    <div class="hero-proof">
+      <div class="hero-proof-dot"></div>
+      Ни один человек не вышел из закрытого пространства
+    </div>
+  </div>
+  <div class="hero-r">
+    <div class="hero-ph">
+      Фото Наташи<br>
+      <small style="font-size:11px;color:#555">прямой взгляд · тёмный фон</small>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="qstrip">
+  <div class="qstrip-txt">«Уверенность не дают — её берут.»</div>
+  <div class="qstrip-sub">Наташа Секрет · Ментор состояния · Поэтесса 18+</div>
+</div>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="wrap">
+    <div class="pain-grid">
+      <div class="pain-item rv">
+        <div class="pain-icon">🥀</div>
+        <div class="pain-t">Ты тянешь всё сама</div>
+        <p class="pain-d">Работа, дети, дом, отношения. Просить помощь — значит быть слабой. Слабость — это плохо. Но внутри давно на нуле.</p>
+      </div>
+      <div class="pain-item rv d1">
+        <div class="pain-icon">⚡</div>
+        <div class="pain-t">Рядом берут — не дают</div>
+        <p class="pain-d">Ты сильная — и притягиваешь тех, кому нужна опора. А тебе нужен тот, кто захочет нести. Но как только ты сильная — он слабеет.</p>
+      </div>
+      <div class="pain-item rv d2">
+        <div class="pain-icon">🌑</div>
+        <div class="pain-t">Живёшь не свою жизнь</div>
+        <p class="pain-d">Когда соглашаешься хотя не хочешь. Когда молчишь хотя есть что сказать. Когда ждёшь разрешения — делать то что хочешь.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img rv">
+        <div class="about-img-inner">
+          Фото Наташи со сцены<br>
+          <small style="font-size:11px">чёрно-белое</small>
+        </div>
+      </div>
+      <div class="rv d1">
+        <div class="about-sub">Кто я</div>
+        <blockquote class="about-quote">«Я не читала об уверенности. Я её добывала.»</blockquote>
+        <p class="about-p">Три года назад я была сильной, независимой и зарабатывала больше своего мужчины. И была одна. Проблема была не в мужчинах — проблема была в <strong>уровне моей энергии</strong>, который не мог притянуть здоровые отношения.</p>
+        <p class="about-p">Я летела в самолёте. Без книги, без телефона. И внутри — <em style="color:var(--bord)">"Муза Бога"</em>. Это не была идея. Это было состояние. Я продала бизнес. Купила квартиру. Начала инвестировать. И впервые мужчина рядом делал что-то не потому что <strong>должен</strong> — а потому что <strong>хочет</strong>.</p>
+        <p class="about-p">Сегодня я помогаю женщинам найти этот же переключатель. Через 12 практик из личного опыта — не из книг.</p>
+        <div class="about-roles">
+          <div class="about-role">
+            <div class="about-role-t">Поэтесса и актриса</div>
+            <div class="about-role-d">Сцена как терапия — моё состояние Музы</div>
+          </div>
+          <div class="about-role">
+            <div class="about-role-t">Инвестор в недвижимость</div>
+            <div class="about-role-d">Материальная база = внутренняя база</div>
+          </div>
+          <div class="about-role">
+            <div class="about-role-t">Жена и мама</div>
+            <div class="about-role-d">Отношения как зеркало состояния</div>
+          </div>
+          <div class="about-role">
+            <div class="about-role-t">Создательница «Муза Бога»</div>
+            <div class="about-role-d">12 практик из личного опыта — не из книг</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAS -->
+<section class="personas" id="personas">
+  <div class="wrap">
+    <div class="personas-head rv">
+      <div>
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bord);margin-bottom:14px;font-weight:500">Авторская методология</div>
+        <h2>Кто управляет<br><em style="font-style:italic;color:var(--bord)">твоей жизнью</em><br>прямо сейчас?</h2>
+      </div>
+      <p>Каждая женщина несёт внутри несколько персонажей. Пока не видишь кто сидит за рулём — ты пассажир в собственной жизни. Прочти медленно. Где почувствуешь что-то в груди — остановись.</p>
+    </div>
+    <div class="personas-grid rv">
+      <div class="persona">
+        <div class="persona-num">01</div>
+        <div class="persona-name">Жертва</div>
+        <div class="persona-phrase">«Всё происходит со мной»</div>
+        <p class="persona-desc">Она не выбирает — с ней происходит. Мужчина обидел. Работа не та. Жизнь сложилась не так. Она ждёт когда всё изменится само.</p>
+        <div class="persona-insight">Жертва не слабая. Она устала держать в одиночку. Под ней — огромная сила. Просто направленная не туда.</div>
+      </div>
+      <div class="persona">
+        <div class="persona-num">02</div>
+        <div class="persona-name">Солдат</div>
+        <div class="persona-phrase">«Я справлюсь сама»</div>
+        <p class="persona-desc">Она тянет всё. Работа, дети, муж, родители. Просить помощь — значит быть слабой. Она гордится что не ломается. Но внутри давно на нуле.</p>
+        <div class="persona-insight">Солдат — это не сила. Это страх попросить. За ним стоит: «если попрошу — откажут».</div>
+      </div>
+      <div class="persona">
+        <div class="persona-num">03</div>
+        <div class="persona-name">Принцесса</div>
+        <div class="persona-phrase">«Я особенная — должны»</div>
+        <p class="persona-desc">Она ждёт. Когда придут, дадут, оценят. Она не просит — это унижение. Она намекает. Обижается. Уходит в молчание.</p>
+        <div class="persona-insight">Принцесса приравняла «просить» к «унижаться». Это не про гордость — это про страх.</div>
+      </div>
+      <div class="persona">
+        <div class="persona-num">04</div>
+        <div class="persona-name">Хозяйка</div>
+        <div class="persona-phrase">«Если не я — никто»</div>
+        <p class="persona-desc">Она контролирует всё. Не может расслабиться — расслабиться значит потерять контроль. А потерять контроль — всё рухнет.</p>
+        <div class="persona-insight">Хозяйка контролирует потому что когда-то было небезопасно не контролировать.</div>
+      </div>
+      <div class="persona is-muza">
+        <div class="persona-num">05</div>
+        <div class="persona-name">Муза</div>
+        <div class="persona-phrase">«Я знаю кто я»</div>
+        <p class="persona-desc">Она не борется. Не доказывает. Не ждёт разрешения. Знает свою ценность — и не торгуется. Когда она заходит в комнату — воздух становится другим.</p>
+        <div class="persona-insight">Муза — это не идеал. Это состояние к которому возвращаешься. Снова и снова. Каждый раз чуть быстрее.</div>
+      </div>
+    </div>
+    <div class="personas-cta rv">
+      <p>Узнала себя? Напиши мне — разберём твоего персонажа и что с ним делать.</p>
+      <a href="https://t.me/nata_secrettt" class="btn btn-bord">Написать ПЕРСОНАЖ</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results">
+  <div class="wrap">
+    <div class="results-head rv">
+      <div>
+        <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bord);margin-bottom:14px;font-weight:500">Что меняется</div>
+        <h2>Реальные истории</h2>
+      </div>
+      <p class="results-note">Конкретно что произошло. Не «стала счастливее».</p>
+    </div>
+    <div class="results-grid">
+      <div class="rcard rv">
+        <div class="rtag">Отношения</div>
+        <p class="rtext">«Муж перестал тыкать и стал принимать. Привёз цветы просто в обычный день. Сам предложил купить мне пальто — когда я просто сказала что хочу, а не выбивала.»</p>
+        <div class="rwho"><strong>Катя</strong> <span>— 3 недели в закрытом пространстве</span></div>
+      </div>
+      <div class="rcard rv d1">
+        <div class="rtag">Деньги</div>
+        <p class="rtext">«Доход вырос без новых клиентов. Просто изменился внутренний фон. Люди начали приходить сами и платить больше — без торга.»</p>
+        <div class="rwho"><strong>Марина</strong> <span>— 2 месяца в работе</span></div>
+      </div>
+      <div class="rcard rv">
+        <div class="rtag">Уверенность</div>
+        <p class="rtext">«Я перестала оправдываться. Раньше объясняла каждое своё решение. Сейчас — нет. И люди начали относиться иначе. Сразу.»</p>
+        <div class="rwho"><strong>Анна</strong> <span>— участница потока</span></div>
+      </div>
+      <div class="rcard rv d1">
+        <div class="rtag">Сцена</div>
+        <p class="rtext">«Вышла на сцену перед двумястами людьми. Без страха. Просто была собой — и зал слушал. Первый раз в жизни.»</p>
+        <div class="rwho"><strong>Лена</strong> <span>— после личной работы</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICES -->
+<section class="practices" id="method">
+  <div class="wrap">
+    <div class="prac-head rv">
+      <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(107,26,26,.7);margin-bottom:14px;font-weight:500">12 практик уверенности</div>
+      <h2>Не из книг.<br><em style="font-style:italic;color:#C97A7A">Из жизни.</em></h2>
+      <p>Каждая практика — переключатель. Меняешь тело — меняется состояние.</p>
+    </div>
+    <div class="prac-grid rv">
+      <div class="prac-item">
+        <div class="prac-n">01</div>
+        <div class="prac-t">Fake it till you make it</div>
+        <p class="prac-d">Притворись уверенной — и станешь ею. Так же работает как сон.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">02</div>
+        <div class="prac-t">Тело и голос</div>
+        <p class="prac-d">Суета — друг хаоса. Пауза — сила. Голос из недр, не из горла.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">03</div>
+        <div class="prac-t">Список побед</div>
+        <p class="prac-d">Мозг не видит достижений без фиксации. Перезагрузка самооценки.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">04</div>
+        <div class="prac-t">«Я есть»</div>
+        <p class="prac-d">Старославянская формула достаточности. Я зашла в комнату — я не сравниваю.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">05</div>
+        <div class="prac-t">Инвестиция в себя</div>
+        <p class="prac-d">Материальная база = внутренняя база. Квартира, образование, тело.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">06</div>
+        <div class="prac-t">Окружение и род</div>
+        <p class="prac-d">Дружба = взаимное умножение успеха. Обида на маму — страдают отношения.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">07</div>
+        <div class="prac-t">Персонажи</div>
+        <p class="prac-d">Взращиваешь часть — она начинает притягивать обстоятельства.</p>
+      </div>
+      <div class="prac-item">
+        <div class="prac-n">08</div>
+        <div class="prac-t">Хобби-душа</div>
+        <p class="prac-d">Невозможно быть неуверенной когда чувствуешь прилив энергии.</p>
+      </div>
+    </div>
+    <div class="rv" style="text-align:center;margin-top:48px">
+      <p style="font-size:14px;color:rgba(255,255,255,.3);margin-bottom:20px">Все 12 практик — в закрытом пространстве Prime WOMAN</p>
+      <a href="#products" class="btn btn-out-w">Войти в пространство</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="prod-head rv">
+      <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--bord);margin-bottom:14px;font-weight:500">Форматы работы</div>
+      <h2>Выбери свой вход</h2>
+      <p>Один формат — один чёткий результат.</p>
+    </div>
+    <div class="prod-grid rv">
+      <div class="prod main">
+        <div class="prod-accent"></div>
+        <div class="prod-ico">✦</div>
+        <div class="prod-name">Prime WOMAN</div>
+        <div class="prod-price">1 500 ₽ / месяц</div>
+        <p class="prod-desc">Закрытое пространство, где меняется состояние. 12 практик из методологии Муза Бога. Живые разборы. Стихи. Групповой созвон раз в месяц.</p>
+        <ul class="prod-list">
+          <li>12 практик уверенности</li>
+          <li>Стихи Наташи — только для участниц</li>
+          <li>Групповой созвон раз в месяц</li>
+          <li>Разборы реальных ситуаций</li>
+          <li>Закрытый чат сообщества</li>
+        </ul>
+        <a href="https://t.me/nata_secrettt" class="prod-cta">✦ Войти в пространство</a>
+        <div class="prod-sp">Ни один человек не вышел</div>
+      </div>
+      <div class="prod">
+        <div class="prod-accent"></div>
+        <div class="prod-ico">🔍</div>
+        <div class="prod-name">Диагностика</div>
+        <div class="prod-price">от 2 900 ₽</div>
+        <p class="prod-desc">Личный разбор уверенности. 45 минут один на один. Найдём какой персонаж управляет тобой и откуда он взялся.</p>
+        <ul class="prod-list">
+          <li>45 минут живой работы с Наташей</li>
+          <li>Инсайт по твоей конкретной ситуации</li>
+          <li>С чего начать именно тебе</li>
+        </ul>
+        <a href="https://t.me/nata_secrettt" class="prod-cta">Написать ДИАГНОСТИКА</a>
+        <div class="prod-sp">Напиши это слово в Telegram</div>
+      </div>
+      <div class="prod">
+        <div class="prod-accent"></div>
+        <div class="prod-ico">🌊</div>
+        <div class="prod-name">Поток Музы</div>
+        <div class="prod-price">от 9 900 ₽</div>
+        <p class="prod-desc">Групповая программа 4 недели. До 10 участниц. Глубокая трансформация в живом потоке.</p>
+        <ul class="prod-list">
+          <li>4 недели интенсивной работы в группе</li>
+          <li>До 10 участниц — личное внимание</li>
+          <li>Практики и разборы каждую неделю</li>
+        </ul>
+        <a href="https://t.me/nata_secrettt" class="prod-cta">Написать ПОТОК</a>
+        <div class="prod-sp">Следующий набор — по запросу</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="faq-layout">
+      <div class="rv">
+        <h2 class="faq-h">Отвечаю<br><em>честно</em></h2>
+        <div class="fi">
+          <button class="fq" onclick="fq(this)">Это эзотерика или психология?<span class="fq-ico">+</span></button>
+          <div class="fa">«Муза Бога» — метафора состояния, в котором женщина перестаёт бороться и начинает получать. Никакой религии. Психология, авторские практики, конкретные инсайты из личного опыта.</div>
+        </div>
+        <div class="fi">
+          <button class="fq" onclick="fq(this)">Это только для тех, кто в отношениях?<span class="fq-ico">+</span></button>
+          <div class="fa">Нет. Состояние Музы меняет отношения с деньгами, с миром, с собой. В пространстве есть участницы замужние, одинокие, разведённые. Меняется всё — не только партнёр.</div>
+        </div>
+        <div class="fi">
+          <button class="fq" onclick="fq(this)">Нет времени на практики каждый день. Подойдёт?<span class="fq-ico">+</span></button>
+          <div class="fa">Да. Нет обязательного расписания. Нет заданий со сроком. Берёшь то что откликается — применяешь когда есть момент. Всё построено под реальную жизнь.</div>
+        </div>
+        <div class="fi">
+          <button class="fq" onclick="fq(this)">Когда появятся первые изменения?<span class="fq-ico">+</span></button>
+          <div class="fa">Катя почувствовала изменения через 3 недели. У других — 1–2 месяца. Зависит от глубины работы. Когда состояние меняется — реакция мира меняется следом.</div>
+        </div>
+        <div class="fi">
+          <button class="fq" onclick="fq(this)">Как устроено закрытое пространство?<span class="fq-ico">+</span></button>
+          <div class="fa">Закрытый Telegram-канал. Каждый месяц: практики из методологии Муза Бога, стихи Наташи, разборы ситуаций и живой групповой созвон. Выйти можно в любой момент. За всё время — никто не вышел.</div>
+        </div>
+        <div class="fi">
+          <button class="fq" onclick="fq(this)">С чего лучше начать — с пространства или диагностики?<span class="fq-ico">+</span></button>
+          <div class="fa">Если есть конкретный запрос — начни с диагностики: найдём твой главный персонаж и что с ним делать. Если хочешь войти в поток — Prime WOMAN. Напиши мне — скажу что подойдёт именно тебе.</div>
+        </div>
+      </div>
+      <div class="rv d1">
+        <div class="fcard">
+          <div class="fcard-t">«Если внутри есть мысль "я так больше не могу" — ты пришла куда надо.»</div>
+          <p class="fcard-d">Напиши мне. Расскажи что происходит. Я отвечу лично — без скриптов.</p>
+          <a href="https://t.me/nata_secrettt" class="fcard-cta">✦ Написать Наташе</a>
+          <p class="fcard-n">или напиши слово <strong>СТАРТ</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fin">
+  <div class="fin-tag">Закрытое пространство · Prime WOMAN · Муза Бога</div>
+  <h2 class="fin-h">Когда женщина наслаждается —<br><em>весь мир хочет её наслаждать</em></h2>
+  <p class="fin-quote">«Ты уже начала. Сегодня. Прямо сейчас.»</p>
+  <div class="fin-btns">
+    <a href="https://t.me/nata_secrettt" class="btn btn-bord">✦ Войти — 1 500 ₽/мес</a>
+    <a href="https://t.me/nata_secrettt" class="btn btn-out-w">Сначала поговорить</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="fb-logo">Наташа Секрет <b>✦</b></div>
+        <p class="fb-tag">Ментор состояния. Поэтесса 18+. Создатель методологии Муза Бога.</p>
+        <div class="fb-soc">
+          <a href="https://www.instagram.com/natasha.secret/" class="fb-s" aria-label="Instagram">◈</a>
+          <a href="https://t.me/nata_secrettt" class="fb-s" aria-label="Telegram">✈</a>
+          <a href="https://youtube.com/@Natasha.secrettt" class="fb-s" aria-label="YouTube">▶</a>
+          <a href="https://tiktok.com/@natasha.secrettt" class="fb-s" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-lbl">Форматы</div>
+        <div class="fc-links">
+          <a href="#products">✦ Prime WOMAN</a>
+          <a href="#products">Диагностика</a>
+          <a href="#products">Поток Музы</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-lbl">О проекте</div>
+        <div class="fc-links">
+          <a href="#about">Обо мне</a>
+          <a href="#personas">Персонажи</a>
+          <a href="#method">12 практик</a>
+          <a href="#results">Результаты</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-lbl">Контакт</div>
+        <div class="fc-links">
+          <a href="https://t.me/nata_secrettt">Telegram</a>
+          <a href="https://www.instagram.com/natasha.secret/">Instagram</a>
+          <a href="mailto:Girl.secrettt@mail.ru">Почта</a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <div class="fcopy">© 2024 Шестакова Наталья Сергеевна · ИНН 650803208364</div>
+      <div class="flegal">
+        <a href="/oferta">Оферта</a>
+        <a href="/privacy">Политика конфиденциальности</a>
+        <a href="/oplata">Оплата</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function fq(btn){
+  const item=btn.closest('.fi'),was=item.classList.contains('open');
+  document.querySelectorAll('.fi').forEach(i=>i.classList.remove('open'));
+  if(!was)item.classList.add('open');
+}
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}});
+},{threshold:.07,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('sc',scrollY>30);
+},{passive:true});
+</script>
+</body>
+</html>
